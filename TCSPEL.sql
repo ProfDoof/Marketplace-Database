@@ -1,6 +1,6 @@
 -- Table Creation - Spell Table
 
-CREATE TABLE `worldwide_market`.`spell` (
+CREATE TABLE `worldwide_market`.`spel` (
   `SpellID` INT NOT NULL,
   `SpellName` VARCHAR(45) NOT NULL,
   `SpellDesc` VARCHAR(200) NOT NULL,

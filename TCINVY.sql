@@ -1,4 +1,4 @@
-CREATE TABLE `worldwide_market`.`inventory` (
+CREATE TABLE `worldwide_market`.`invy` (
   `StoreID` INT NOT NULL,
   `ItemID` INT NOT NULL,
   `QuanInStore` INT NOT NULL,

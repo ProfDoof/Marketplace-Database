@@ -6,7 +6,7 @@ CREATE SCHEMA `worldwide_market` ;
 
 -- Table Creation
 
-CREATE TABLE `worldwide_market`.`store` (
+CREATE TABLE `worldwide_market`.`stor` (
   `StoreID` INT NOT NULL AUTO_INCREMENT,
   `StoreName` VARCHAR(45) NOT NULL,
   `StoreType` VARCHAR(45) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE `worldwide_market`.`store` (
   PRIMARY KEY (`StoreID`))
 COMMENT = ' Designed to hold the store names and types among the worldwide marketplace ';
 
-CREATE TABLE `worldwide_market`.`valstore` (
+CREATE TABLE `worldwide_market`.`stvt` (
   `StoreType` VARCHAR(45) NOT NULL,
   `TypeDescription` VARCHAR(45) NULL,
   PRIMARY KEY (`StoreType`))
@@ -31,7 +31,7 @@ CREATE TABLE `worldwide_market`.`item` (
   PRIMARY KEY (`ItemID`))
 COMMENT = ' This Stores all items that will be used by the stores ';
 
-CREATE TABLE `worldwide_market`.`inventory` (
+CREATE TABLE `worldwide_market`.`invy` (
   `StoreID` INT NOT NULL,
   `ItemID` INT NOT NULL,
   `QuanInStore` INT NOT NULL,
@@ -39,19 +39,19 @@ CREATE TABLE `worldwide_market`.`inventory` (
   PRIMARY KEY (`StoreID`, `ItemID`))
 COMMENT = 'The current stock of a particular item at a particular store';
 
-CREATE TABLE `worldwide_market`.`magic_items` (
+CREATE TABLE `worldwide_market`.`mitm` (
   `ItemID` INT NOT NULL,
   `SpellID` INT NOT NULL,
   `ArtifactName` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`ItemID`, `SpellID`))
 COMMENT = 'Stores items that have magical properties or are enhanced in some way.';
 
-CREATE TABLE `worldwide_market`.`valitem` (
+CREATE TABLE `worldwide_market`.`itvt` (
   `ItemType` VARCHAR(8) NOT NULL,
   `ItemDescription` LONGTEXT NOT NULL,
 PRIMARY KEY (`ItemType`));
 
-CREATE TABLE `worldwide_market`.`spell` (
+CREATE TABLE `worldwide_market`.`spel` (
   `SpellID` INT NOT NULL,
   `SpellName` VARCHAR(45) NOT NULL,
   `SpellDesc` VARCHAR(200) NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE `worldwide_market`.`spell` (
   PRIMARY KEY (`SpellID`))
 COMMENT = 'Stores various spells and their effects.';
 
-CREATE TABLE `worldwide_market`.`valspell` (
+CREATE TABLE `worldwide_market`.`spvt` (
   `SchoolType` VARCHAR(8) NOT NULL,
   `SchoolDescription` VARCHAR(45) NOT NULL,
 PRIMARY KEY (`SchoolType`));

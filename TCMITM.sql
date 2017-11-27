@@ -1,6 +1,6 @@
 -- Table Creation - Magic Item Table
 
-CREATE TABLE `worldwide_market`.`magic_items` (
+CREATE TABLE `worldwide_market`.`mitm` (
   `ItemID` INT NOT NULL,
   `SpellID` INT NOT NULL,
   `ArtifactName` VARCHAR(45) NOT NULL,

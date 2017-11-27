@@ -1,6 +1,6 @@
 -- Table Creation - Store Table
 
-CREATE TABLE `worldwide_market`.`store` (
+CREATE TABLE `worldwide_market`.`stor` (
   `StoreID` INT NOT NULL AUTO_INCREMENT,
   `StoreName` VARCHAR(45) NOT NULL,
   `StoreType` VARCHAR(45) NOT NULL,
