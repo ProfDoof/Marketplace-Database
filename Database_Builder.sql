@@ -68,3 +68,59 @@ CREATE TABLE `worldwide_market`.`spvt` (
   `SchoolDescription` VARCHAR(45) NOT NULL,
 PRIMARY KEY (`SchoolType`));
 
+ALTER TABLE `worldwide_market`.`item` 
+ADD INDEX `ItemType_idx` (`ItemType` ASC);
+ALTER TABLE `worldwide_market`.`item` 
+ADD CONSTRAINT `ItemType`
+  FOREIGN KEY (`ItemType`)
+  REFERENCES `worldwide_market`.`itvt` (`ItemType`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+ALTER TABLE `worldwide_market`.`spel` 
+ADD INDEX `SchoolType_idx` (`School` ASC);
+ALTER TABLE `worldwide_market`.`spel` 
+ADD CONSTRAINT `SchoolType`
+  FOREIGN KEY (`School`)
+  REFERENCES `worldwide_market`.`spvt` (`SchoolType`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+ALTER TABLE `worldwide_market`.`stor` 
+ADD INDEX `StoreType_idx` (`StoreType` ASC);
+ALTER TABLE `worldwide_market`.`stor` 
+ADD CONSTRAINT `StoreType`
+  FOREIGN KEY (`StoreType`)
+  REFERENCES `worldwide_market`.`stvt` (`StoreType`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+ALTER TABLE `worldwide_market`.`mitm` 
+ADD INDEX `Item` (`ItemID` ASC),
+ADD INDEX `Spell` (`SpellID` ASC);
+ALTER TABLE `worldwide_market`.`mitm` 
+ADD CONSTRAINT `SpellID`
+  FOREIGN KEY (`SpellID`)
+  REFERENCES `worldwide_market`.`spel` (`SpellID`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `ItemID`
+  FOREIGN KEY (`ItemID`)
+  REFERENCES `worldwide_market`.`item` (`ItemID`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+ALTER TABLE `worldwide_market`.`invy` 
+ADD INDEX `Item` (`ItemID` ASC),
+ADD INDEX `Store` (`StoreID` ASC);
+ALTER TABLE `worldwide_market`.`invy` 
+ADD CONSTRAINT `StoreINVY`
+  FOREIGN KEY (`StoreID`)
+  REFERENCES `worldwide_market`.`stor` (`StoreID`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE,
+ADD CONSTRAINT `ItemINVY`
+  FOREIGN KEY (`ItemID`)
+  REFERENCES `worldwide_market`.`item` (`ItemID`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;

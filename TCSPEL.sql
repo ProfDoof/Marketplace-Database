@@ -4,7 +4,7 @@ CREATE TABLE `worldwide_market`.`spel` (
   `SpellID` INT NOT NULL,
   `SpellName` VARCHAR(45) NOT NULL,
   `SpellDesc` VARCHAR(200) NOT NULL,
-  `School` VARCHAR(15) NOT NULL,
+  `SchoolCode` VARCHAR(15) NOT NULL,
   `Effect` VARCHAR(15) NOT NULL,
   `Components` VARCHAR(45) NULL,
   `Range` INT NOT NULL,
