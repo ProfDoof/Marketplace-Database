@@ -12,3 +12,4 @@ INSERT INTO STOR VALUES(
 	null, 'The Scale-mail Chicken', 'A', 'Ebberon', 0, 0);
 INSERT INTO STOR VALUES(
 	null, 'The Mapping Scribe', 'S', 'Ebberon', 0, 0);
+    
