@@ -125,45 +125,5 @@ ADD CONSTRAINT `ItemINVY`
   ON DELETE CASCADE
   ON UPDATE CASCADE;
 
-CREATE VIEW `Stores` AS
-    SELECT 
-        STOR.StoreID,
-        STOR.StoreName,
-        STVT.TypeDescription,
-        STOR.Location,
-        STOR.MarketDiff,
-        STOR.HaggleDiff
-    FROM
-        STOR,
-        STVT
-    WHERE
-        STOR.StoreType = STVT.StoreType
 
-CREATE VIEW `Items` AS
-    SELECT 
-        ITEM.ItemName, 
-        ITVT.ItemDescription, 
-        ITEM.ItemDescription, 
-        ITEM.Cost 
-    FROM 
-        ITEM, 
-        ITVT
-    WHERE 
-        ITEM.ItemType = ITVT.ItemType;
-
-CREATE VIEW `Inventory` AS
-    SELECT 
-        STOR.StoreName,
-        ITEM.ItemName,
-        (ITEM.Cost * STOR.MarketDiff * .01) AS MarketPrice,
-        (ITEM.Cost * STOR.HaggleDiff * .01) AS LowestPrice,
-        INVY.QuanInStore,
-        INVY.QuanOnOrder
-    FROM
-        STOR,
-        ITEM,
-        INVY
-    WHERE
-        STOR.StoreID = INVY.StoreID
-            AND ITEM.ItemID = INVY.ItemID;
 
