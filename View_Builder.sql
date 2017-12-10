@@ -47,12 +47,12 @@ CREATE VIEW `MagicItems` AS
         
 CREATE VIEW `Spells` AS
 	SELECT
-		SPEL.SpellName
-        SPEL.SpellDesc
-        SPVT.SchoolDescription
-        SPEL.Effect
-        SPEL.Components
-        SPEL.Range
+		SPEL.SpellName,
+        SPEL.SpellDesc,
+        SPVT.SchoolDescription,
+        SPEL.Effect,
+        SPEL.Components,
+        SPEL.Range,
         SPEL.Level
     FROM
 		SPEL INNER JOIN SPVT ON (SPEL.School = SPVT.SchoolType);
