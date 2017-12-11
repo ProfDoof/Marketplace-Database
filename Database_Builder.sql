@@ -267,3 +267,17 @@ INSERT INTO ITEM(ItemName, ItemType, ItemDescription, Cost) VALUES
     ('Candle','BI','For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet', .01),
     ('Wand','SI','A magic item about 15 inches long made out of some kind of strange metal. It uses the spell in the next column. It has a specified number of charges that can be found in the DMG.', 500),
     ('Arrows(20)','MU','These are fired from your bow to cause damage. Without these your bow is nothing more than a glorified walking stick. These arrows weigh about 1 lb.', 1);
+    
+-- Data Insertion Inventory Table
+
+INSERT INTO INVY(StoreID, ItemID, QuanInStore, QuanOnOrder) Values
+	(2,1,5,2),
+    (2,2,1,1),
+    (5,3,1,0),
+    (5,4,5,5),
+    (4,5,10,10),
+    (4,6,3,2),
+    (1,7,30,60),
+    (1,8,30,30),
+    (3,9,10,10),
+    (3,11,10,10);
