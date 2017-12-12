@@ -160,8 +160,8 @@ CREATE VIEW `Inventory` AS
     SELECT 
         STOR.StoreName,
         ITEM.ItemName,
-        (ITEM.Cost + (ITEM.Cost * STOR.MarketDiff * .01) ) AS MarketPrice,
-        (ITEM.Cost + (ITEM.Cost * STOR.HaggleDiff * .01) ) AS LowestPrice,
+        ROUND((ITEM.Cost + (ITEM.Cost * STOR.MarketDiff * .01) ), 2)  AS MarketPrice,
+        ROUND((ITEM.Cost + (ITEM.Cost * STOR.HaggleDiff * .01) ), 2) AS LowestPrice,
         INVY.QuanInStore,
         INVY.QuanOnOrder
     FROM
@@ -246,12 +246,12 @@ INSERT INTO SPEL(SpellName, SpellDesc, School, Effect, Components, SPEL.Range, S
 -- Data Insertion Store Table
 
 INSERT INTO STOR(StoreName, StoreType, Location, MarketDiff, HaggleDiff) VALUES
-	('The Fatted Cafe', 'I', 'Ebberon', 0, 0),
-    ('The Silken Cloak', 'T', 'Ebberon', 0, 0),
-    ('The Piggly Wiggly', 'G', 'Ebberon', 0, 0),
-    ('The Sword and Shield', 'W', 'Ebberon', 0, 0),
-    ('The Scale-mail Chicken', 'A', 'Ebberon', 0, 0),
-    ('The Mapping Scribe', 'S', 'Ebberon', 0, 0);
+	('The Fatted Cafe', 'I', 'Ebberon', 25, 15),
+    ('The Silken Cloak', 'T', 'Ebberon', 50, 5),
+    ('The Piggly Wiggly', 'G', 'Ebberon', 5, -10),
+    ('The Sword and Shield', 'W', 'Ebberon', 75, 25),
+    ('The Scale-mail Chicken', 'A', 'Ebberon', 5, 0),
+    ('The Mapping Scribe', 'S', 'Ebberon', 9, 7);
     
 -- Data Insertion Item Table
 
@@ -279,5 +279,7 @@ INSERT INTO INVY(StoreID, ItemID, QuanInStore, QuanOnOrder) Values
     (4,6,3,2),
     (1,7,30,60),
     (1,8,30,30),
+    (3,7,30,60),
+    (3,8,30,30),
     (3,9,10,10),
     (3,11,10,10);
