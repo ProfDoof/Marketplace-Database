@@ -197,7 +197,7 @@ CREATE VIEW `Spells` AS
 -- Data Insertion Spell Table
 
 INSERT INTO SPVT(SchoolType, SchoolDescription) VALUES
-	('AB', 'Abjuration'),
+    ('AB', 'Abjuration'),
     ('CO', 'Conjuration'),
     ('DI', 'Divination'),
     ('EN', 'Enchantment'),
@@ -210,9 +210,9 @@ INSERT INTO SPVT(SchoolType, SchoolDescription) VALUES
 -- Data Insertion Store Type Validation Table
 
 INSERT INTO STVT(StoreType, TypeDescription) VALUES
-	('I', 'Inn'),
+    ('I', 'Inn'),
     ('T', 'Tailor'),
-	('G', 'General Store'),
+    ('G', 'General Store'),
     ('W', 'Weaponsmith'),
     ('A', 'Armorer'),
     ('S', 'Scribe');
@@ -235,8 +235,8 @@ INSERT INTO ITVT(ItemType, ItemDescription) VALUES
 -- Data Insertion Spell Table
 
 INSERT INTO SPEL(SpellName, SpellDesc, School, Effect, Components, SPEL.Range, SPEL.Level) VALUES
-	('Acid Splash', 'You may hurl an orb of acid at one target creature or two standing within 5 feet of each other. The orb deals 1d6 acid damage and increases by 1d6 at 5th, 11th, and 17th level.', 'CO', '1d6 Acid Damage', 'VS', 60, 0),
-	('Blade Ward', 'You trace a sigil of warding in the air over yourself. Until the end of your next turn you have resistance to slashing, bludgeoning, and piercing attacks dealt by weapons.', 'AB', 'Grants resistance against physical attacks.', 'VS', 0, 0),
+    ('Acid Splash', 'You may hurl an orb of acid at one target creature or two standing within 5 feet of each other. The orb deals 1d6 acid damage and increases by 1d6 at 5th, 11th, and 17th level.', 'CO', '1d6 Acid Damage', 'VS', 60, 0),
+    ('Blade Ward', 'You trace a sigil of warding in the air over yourself. Until the end of your next turn you have resistance to slashing, bludgeoning, and piercing attacks dealt by weapons.', 'AB', 'Grants resistance against physical attacks.', 'VS', 0, 0),
     ('Chill Touch', 'Create a ghostly, skeletal hand and make a ranged spell attack against a target creature. On a hit the creature takes 1d8 necrotic damage and cannot regain HP until the start of your next turn. If the target is undead, they also have disadvantage when attacking you until the end of your next turn. The damage inflicted increased by 1d8 at 5th, 11th, and 17th level.', 'NE', 'Deal 1d8 necrotic damage and prevent healing on target.', 'VS', 120, 0),
     ('Create Bonfire', 'Creates a small bonfire at a location within range. Creatures standing where the bonfire is made must perform a DEX saving throw or take 1d8 fire damage. This damage is raised by 1d8 at 5th, 11th, and 17th level.', 'CO', 'Create a bonfire at a target location within range.', 'VS', 60, 0),
     ('Dancing Lights', 'Create four small floating lights that can be combined into one vaguely humanoid figure. Each light shines for a 10 foot radius. The lights can be moved up to 60 feet at will, but must remain within 20 feet of each other and will disappear if they exit the spell\'s range.', 'EV', 'Create four small floating lights that shed dim light in a 10 foot radius.', 'VSM', 120, 0),
@@ -249,7 +249,6 @@ INSERT INTO SPEL(SpellName, SpellDesc, School, Effect, Components, SPEL.Range, S
     ('Mending', 'You touch one target object, the spell will repair one break or tear in it, such as a broken chain link, a torn cloak, or a broken key. As long as the break is no longer than 1 foot across, the object will be as good as new. While this spell can fix magic items, if the itme lost its magic from being broken, this will not return it.', 'TR', 'Fix a less than 1 foot break in an object.', 'VSM', 0,0),
     ('Message', 'You point at a target creature within range and whipser a message. The creature will hear it telepathically and may whisper a response only you will hear. If you are familiar with the target and know their location, you may cast this spell through 1 foot thin barriers, but it is blocked by magical silence.', 'TR', 'Send a telepathic message to a target creature.', 'VSM', 120,0),
     ('Minor Illusion', 'Creates a small sustained illusion at a target area within range. This can be anything in the user\'s imagination as long as it is not larger than a 5 foot cube. Sounds can be sustained or delayed and as quiet as a whisper, or loud as a tiger\'s roar.', 'IL', 'Creates a small illusion at a target area.', 'SM', 30,0),
-    ('Poison Spray', 'You point your hand towards a target creature and a puff of poison sprays out towards it. The target must succeed on a constitution saving throw or take 1d12 poison damage. This spell gains 1d12 extra damage at 5th, 11th, and 17th level.', 'CO', '1d12 Poison damage on failed CON save', 'VS', 10,0),
     ('Spare the Dying', 'You touch one target creature with less than 0 HP. That creatures stabilizes immediately.', 'NE', 'Stabilize one creature.', 'VS', 0, 0),
     ('Alarm', 'You set an alarm against unwanted intrustion. Choose an area within range that is no larger than a 20 foot cube. Until the spells ends, any tiny or larger creature that enters the space will set off the alarm. You can designate creatures that won\'t set it off when you cast the spell. The alarm can be a ping or a bell. The ping sounds in your mind only and will awaken you from sleep. The bell is audible out to 60 feet for 10 seconds.', 'AB', 'Sets an alarm in a 20 foot area.', 'VSM', 30, 1),
     ('Animal Friendship', 'You magically convince one creature that you mean it no harm. Select a target beast within range. If the creature has an intelligence of 4 or higher then the spell will fail. Otherwise, the beast must succeed on a WIS saving throw or be charmed by you for the 24 hours. If you or an ally attack the beast, then the spell will end.', 'EN', 'Charm target creature that has less than 4 INT.', 'VSM', 30,1),
@@ -283,7 +282,7 @@ INSERT INTO STOR(StoreName, StoreType, Location, MarketDiff, HaggleDiff) VALUES
 -- Data Insertion Item Table
 
 INSERT INTO ITEM(ItemName, ItemType, ItemDescription, Cost) VALUES
-	('Padded Armor','LA','Padded Armor consists of quilted layers of cloth and batting, it has an AC of 11 + Dex modifier, has a stealth disadvantage, and weighs 8 lbs', 5),
+  	('Padded Armor','LA','Padded Armor consists of quilted layers of cloth and batting, it has an AC of 11 + Dex modifier, has a stealth disadvantage, and weighs 8 lbs', 5),
     ('Hide Armor','MA','This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor. It has an AC of 12 plus the Dex modifier(max of 2), and weighs 12 lbs', 10),
     ('Plate Mail','HA','Plate mail consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body. It has an AC of 18,requires 15 strength, causes disadvantage on stealth, and weighs 65 pounds.', 1500),
     ('Shield','SH','A shield is defensive device worn on your arm used to redirect attacks and to block them. They increase your AC by 2, and weigh 6 lbs.', 10),
@@ -298,7 +297,7 @@ INSERT INTO ITEM(ItemName, ItemType, ItemDescription, Cost) VALUES
 -- Data Insertion Inventory Table
 
 INSERT INTO INVY(StoreID, ItemID, QuanInStore, QuanOnOrder) Values
-	(2,1,5,2),
+  	(2,1,5,2),
     (2,2,1,1),
     (5,3,1,0),
     (5,4,5,5),
