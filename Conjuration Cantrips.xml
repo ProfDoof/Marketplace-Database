@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">SpellName</Data></Cell>
+			<Cell><Data ss:Type="String">SpellDesc</Data></Cell>
+			<Cell><Data ss:Type="String">Effect</Data></Cell>
+			<Cell><Data ss:Type="String">Components</Data></Cell>
+			<Cell><Data ss:Type="String">Range</Data></Cell>
+			<Cell><Data ss:Type="String">Level</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">Acid Splash</Data></Cell>
+			<Cell><Data ss:Type="String">You may hurl an orb of acid at one target creature or two standing within 5 feet of each other. The orb deals 1d6 acid damage and increases by 1d6 at 5th, 11th, and 17th level.</Data></Cell>
+			<Cell><Data ss:Type="String">1d6 Acid Damage</Data></Cell>
+			<Cell><Data ss:Type="String">VS</Data></Cell>
+			<Cell><Data ss:Type="Number">60</Data></Cell>
+			<Cell><Data ss:Type="Number">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Create Bonfire</Data></Cell>
+			<Cell><Data ss:Type="String">Creates a small bonfire at a location within range. Creatures standing where the bonfire is made must perform a DEX saving throw or take 1d8 fire damage. This damage is raised by 1d8 at 5th, 11th, and 17th level.</Data></Cell>
+			<Cell><Data ss:Type="String">Create a bonfire at a target location within range.</Data></Cell>
+			<Cell><Data ss:Type="String">VS</Data></Cell>
+			<Cell><Data ss:Type="Number">60</Data></Cell>
+			<Cell><Data ss:Type="Number">0</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Mage Hand</Data></Cell>
+			<Cell><Data ss:Type="String">Creates a spectral hand with a range of 30 feet that will stay for up to 1 minute. You can use your action to control the hand to do simple tasks, but it can only lift 10 pounds and cannot attack or use magic items.</Data></Cell>
+			<Cell><Data ss:Type="String">Creates a floating hand to do simple tasks for you.</Data></Cell>
+			<Cell><Data ss:Type="String">VS</Data></Cell>
+			<Cell><Data ss:Type="Number">30</Data></Cell>
+			<Cell><Data ss:Type="Number">0</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

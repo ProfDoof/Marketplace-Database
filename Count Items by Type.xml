@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">ItemType</Data></Cell>
+			<Cell><Data ss:Type="String">COUNT(*)</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">BI</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">DR</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">FO</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">HA</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">LA</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MA</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MU</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">MW</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SH</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SI</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SW</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

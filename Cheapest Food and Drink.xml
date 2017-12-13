@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">StoreName</Data></Cell>
+			<Cell><Data ss:Type="String">Location</Data></Cell>
+			<Cell><Data ss:Type="String">ItemName</Data></Cell>
+			<Cell><Data ss:Type="String">MarketPrice</Data></Cell>
+			<Cell><Data ss:Type="String">LowestPrice</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">The Piggly Wiggly</Data></Cell>
+			<Cell><Data ss:Type="String">Ebberon</Data></Cell>
+			<Cell><Data ss:Type="String">Ale</Data></Cell>
+			<Cell><Data ss:Type="Number">0.04</Data></Cell>
+			<Cell><Data ss:Type="Number">0.04</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">The Piggly Wiggly</Data></Cell>
+			<Cell><Data ss:Type="String">Ebberon</Data></Cell>
+			<Cell><Data ss:Type="String">Bread, loaf</Data></Cell>
+			<Cell><Data ss:Type="Number">0.04</Data></Cell>
+			<Cell><Data ss:Type="Number">0.04</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">The Fatted Cafe</Data></Cell>
+			<Cell><Data ss:Type="String">Ebberon</Data></Cell>
+			<Cell><Data ss:Type="String">Ale</Data></Cell>
+			<Cell><Data ss:Type="Number">0.05</Data></Cell>
+			<Cell><Data ss:Type="Number">0.05</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">The Fatted Cafe</Data></Cell>
+			<Cell><Data ss:Type="String">Ebberon</Data></Cell>
+			<Cell><Data ss:Type="String">Bread, loaf</Data></Cell>
+			<Cell><Data ss:Type="Number">0.05</Data></Cell>
+			<Cell><Data ss:Type="Number">0.05</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>
